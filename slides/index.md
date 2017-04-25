@@ -1,258 +1,213 @@
-- title : React Native with F#
-- description : Introduction to React Native with F#
-- author : Steffen Forkmann
+- title : Wiki der Step Ahead
+- description : Überblick zum technisches Wiki der Step Ahead
+- author : Marko Apfel
 - theme : night
 - transition : default
 
 ***
 
-## React Native with F#
-
-<br />
-<br />
-
-### Modern mobile app development
-
-<br />
-<br />
-Steffen Forkmann - [@sforkmann](http://www.twitter.com/sforkmann)
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
 
 ***
 
-### Modern mobile app development?
+## Wiki der Step Ahead
 
-* UI/UX
-    * "Native mobile apps"
-    * Performance
-* Tooling
-    * Hot loading
-    * IntelliSense
-* Maintainability
-    * Easy to debug
-    * Correctness
+<br />
+<br />
 
----
+### Why we need a technical Wiki
 
-### "Native" UI
+<br />
+<br />
+Marko Apfel - [@markoapfel](http://www.twitter.com/markoapfel)
 
- <img src="images/meter.png" style="background: transparent; border-style: none;"  width=300 />
+***
 
----
+### Why we need a technical Wiki?
 
-### Tooling
+* software and knowledge are our assets
+    * persist & spread knowledge
 
-<img src="images/hotloading.gif" style="background: transparent; border-style: none;"  />
+> It is your responsibility as a professional developer   
+to properly document software  
+that is intended for use by others.
+
 
 *** 
 
-### Model - View - Update
+### Why technicians like a Git-based Wiki
 
-#### "Elm - Architecture"
+* It's handy, it's fast, it's flexible
+* All Benefits from a DVCS
+	* Collaboration
+	* Online & Offline-Editing
+	* Branching
+	* Diffing
+* Versioned as a whole
+	* Figure out what the status of an exported manual  
+to a given point in time was
+* Versioning in a context
+	* Commit wraps all belonging changes, 
+		* Commit message
+		* Relocating content together with adjusted references
 
- <img src="images/Elm.png" style="background: white;" width=700 />
+---
+
+* Markup-Language
+	* Frees from presentation
+	* All pages have the same look & feel
+* Artifact dividing
+	* text, images, ..
+* Export-Options
+	* Pandoc
+	* External documents (UM, IG, ..)
+* Flexibilty regarding hoster
+	* No vendor lockin
+* It' s fun, it's modern
 
 
- <small>http://danielbachler.de/2016/02/11/berlinjs-talk-about-elm.html</small>
+***
 
+### Why we use Markdown
+
+* It's fast to write
+* Markdown can be a useful tool for producing clean & professional looking 
+	* research papers
+	* memos
+	* email messages
+	* blog posts
+* without the hassle of remembering lots of HTML tags
+
+ <small>http://www.makeuseof.com/tag/learning-markdown-write-web-faster/</small>
+
+---
+
+### Headers
+
+	# H1
+	## H2
+	### H3
+	#### H4
+	##### H5
+	###### H6
+
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+---
+
+Alternatively, for H1 and H2, an underline-ish style:
+	
+	Alt-H1
+	======
+	
+	Alt-H2
+	------
+	
+Alt-H1
+======
+
+Alt-H2
+------
+
+---
+
+### Emphasis
+
+	Emphasis, aka italics, with *asterisks* or _underscores_.
+	Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Emphasis, aka italics, with *asterisks* or _underscores_.  
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+---
+
+### Lists
+
+	1. First ordered list item
+	2. Another item
+		* Unordered sub-list. 
+	1. Actual numbers don't matter, just that it's a number
+		1. Ordered sub-list
+	3. And another item.
+
+1. First ordered list item
+2. Another item
+	* Unordered sub-list. 
+1. Actual numbers don't matter, just that it's a number
+	1. Ordered sub-list
+3. And another item.
+
+btw: Markdown takes care, regarding numbering  
+--> use 1. only
+
+***
+
+### Structure of the Wiki
+
+* 000 - **Generic IT topics**
+* 200 - **Guidelines**
+* 300 - **Documentation**
+* 400 - **Specifications**
+* 500 - Steps specific knowledge
+* 700 - Databases 
+* 800 - Coding
+* 900 - **Tools**
+
+---
+
+### Generic IT topics
+
+* IT systems of Step Ahead
+	* Steps
+	* Team Foundation Server
+	* CORP.IT-Infos für neue Mitarbeiter in CORP.Produkt
+	* Testsysteme der Produktentwicklung
+* External services
+	* Office 365
+	* Visual Studio Team Services
+
+---
+
+### Guidelines
+
+* 201, 210-219 Organisation
+* 202, 220-229 IT-Fundamentals
+* 203, 230-239 Standard Tools
+* ...
+
+---
+
+### Organisational Guidelines & Instructions
+
+`201.OrganisationalGuidelines.md`
+
+* HR-related Guidlines
+* **Activity Management, Tracking & Controlling**
+	* Steps Agile
+	* Committing Code
 
 --- 
 
-### Model - View - Update
+### Activity Management, Tracking & Controlling
 
-    // MODEL
+`211.OG.StepsAgile.md`
 
-    type Model = int
+<img src="images/OG.StepsAgile.01.png" style="background: transparent; border-style: none;"  width=300 />
 
-    type Msg =
-    | Increment
-    | Decrement
+![](images/OG.StepsAgile.01.png)
 
-    let init() : Model = 0
 
----
+### Links
 
-### Model - View - Update
-
-    // VIEW
-
-    let view model dispatch =
-        div []
-            [ button [ OnClick (fun _ -> dispatch Decrement) ] [ str "-" ]
-              div [] [ str (model.ToString()) ]
-              button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ] ]
-
----
-
-### Model - View - Update
-
-    // UPDATE
-
-    let update (msg:Msg) (model:Model) =
-        match msg with
-        | Increment -> model + 1
-        | Decrement -> model - 1
-
----
-
-### Model - View - Update
-
-    // wiring things up
-
-    Program.mkSimple init update view
-    |> Program.withConsoleTrace
-    |> Program.withReact "elmish-app"
-    |> Program.run
-
----
-
-### Model - View - Update
-
-# Demo
-
-***
-
-### Sub-Components
-
-    // MODEL
-
-    type Model = {
-        Counters : Counter.Model list
-    }
-
-    type Msg = 
-    | Insert
-    | Remove
-    | Modify of int * Counter.Msg
-
-    let init() : Model =
-        { Counters = [] }
-
----
-
-### Sub-Components
-
-    // VIEW
-
-    let view model dispatch =
-        let counterDispatch i msg = dispatch (Modify (i, msg))
-
-        let counters =
-            model.Counters
-            |> List.mapi (fun i c -> Counter.view c (counterDispatch i)) 
-        
-        div [] [ 
-            yield button [ OnClick (fun _ -> dispatch Remove) ] [  str "Remove" ]
-            yield button [ OnClick (fun _ -> dispatch Insert) ] [ str "Add" ] 
-            yield! counters ]
-
----
-
-### Sub-Components
-
-    // UPDATE
-
-    let update (msg:Msg) (model:Model) =
-        match msg with
-        | Insert ->
-            { Counters = Counter.init() :: model.Counters }
-        | Remove ->
-            { Counters = 
-                match model.Counters with
-                | [] -> []
-                | x :: rest -> rest }
-        | Modify (id, counterMsg) ->
-            { Counters =
-                model.Counters
-                |> List.mapi (fun i counterModel -> 
-                    if i = id then
-                        Counter.update counterMsg counterModel
-                    else
-                        counterModel) }
-
----
-
-### Sub-Components
-
-# Demo
-
-***
-
-### React
-
-* Facebook library for UI 
-* <code>state => view</code>
-* Virtual DOM
-
----
-
-### Virtual DOM - Initial
-
-<br />
-<br />
-
-
- <img src="images/onchange_vdom_initial.svg" style="background: white;" />
-
-<br />
-<br />
-
- <small>http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html</small>
-
----
-
-### Virtual DOM - Change
-
-<br />
-<br />
-
-
- <img src="images/onchange_vdom_change.svg" style="background: white;" />
-
-<br />
-<br />
-
- <small>http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html</small>
-
----
-
-### Virtual DOM - Reuse
-
-<br />
-<br />
-
-
- <img src="images/onchange_immutable.svg" style="background: white;" />
-
-<br />
-<br />
-
- <small>http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html</small>
-
-
-*** 
-
-### ReactNative
-
- <img src="images/ReactNative.png" style="background: white;" />
-
-
- <small>http://timbuckley.github.io/react-native-presentation</small>
-
-***
-
-### Show me the code
-
-*** 
-
-### TakeAways
-
-* Learn all the FP you can!
-* Simple modular design
-
-*** 
-
-### Thank you!
-
-* https://github.com/fable-compiler/fable-elmish
-* https://ionide.io
-* https://facebook.github.io/react-native/
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Learning Markdowsn: Write For the Web, Faster](http://www.makeuseof.com/tag/learning-markdown-write-web-faster/)
+[Presentation: Wiki der Step Ahead](https://stepahead.github.io/presentations/#/)
+[technisches Wiki der Step Ahead](https://sa-devolution.visualstudio.com/_git/Wiki?path=%2FREADME.md)
