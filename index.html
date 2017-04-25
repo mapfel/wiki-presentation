@@ -215,6 +215,7 @@ Markdown can be a useful tool for producing clean &amp; professional looking
 </ul>
 </br>
 <p><small><a href="http://www.makeuseof.com/tag/learning-markdown-write-web-faster/&lt;/small&gt;">http://www.makeuseof.com/tag/learning-markdown-write-web-faster/</small></a></p>
+<p>→ btw: this presentation as well (Git/Markdown/FsReveal)</p>
 </section>
 <section >
 <h3>Headers</h3>
@@ -328,12 +329,29 @@ Actual numbers don't matter, just that it's a number
 </ul>
 <p>tip: skip the alternate text</p>
 </section>
+<section >
+<h3>Source Code</h3>
+<p>incl. Syntax-Highlighting</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span class="i">update</span> (<span class="i">msg</span><span class="o">:</span><span class="i">Msg</span>) (<span class="i">model</span><span class="o">:</span><span class="i">Model</span>) <span class="o">=</span>
+    <span class="k">match</span> <span class="i">msg</span> <span class="k">with</span>
+    | <span class="i">Increment</span> <span class="k">-&gt;</span> <span class="i">model</span> <span class="o">+</span> <span class="n">1</span>
+    | <span class="i">Decrement</span> <span class="k">-&gt;</span> <span class="i">model</span> <span class="o">-</span> <span class="n">1</span>
+</code></pre></td>
+</tr>
+</table>
+<p><img src="images/SyntaxHighlighting.png" alt="" /></p>
+</section>
 </section>
 <section >
 <section id="StructureOfOurWiki">
 <h2>Structure of the Wiki</h2>
 <ul>
-<li><a href="#/structure-100">000 - <strong>Generic IT topics</strong></a></li>
+<li><a href="#/structure-000">000 - <strong>Generic IT topics</strong></a></li>
 <li><a href="#/structure-200">200 - <strong>Guidelines</strong></a></li>
 <li><a href="#/structure-300">300 - <strong>Documentation</strong></a></li>
 <li><a href="#/structure-400">400 - <strong>Specifications</strong></a></li>
@@ -343,8 +361,8 @@ Actual numbers don't matter, just that it's a number
 <li><a href="#/structure-900">900 - <strong>Tools</strong></a></li>
 </ul>
 </section>
-<section id="structure-100">
-<h3>Generic IT topics (100)</h3>
+<section id="structure-000">
+<h3>Generic IT topics (000)</h3>
 <ul>
 <li>
 IT systems of Step Ahead
@@ -391,7 +409,6 @@ External services
 <section >
 <h3>Activity Management, Tracking &amp; Controlling</h3>
 <p><code>211.OG.StepsAgile.md</code></p>
-<img src="images/OG.StepsAgile.01.png" style="background: transparent; border-style: none;"  width=300 />
 <p><img src="images/OG.StepsAgile.01.png" alt="" /></p>
 </section>
 <section id="structure-300">
@@ -440,8 +457,8 @@ SMM, BM, SysMM, IG, UM</p>
 <ul>
 <li>
 <p>online<br />
-<a href="https://sa-devolution.visualstudio.com/_git/Wiki?path=%2FREADME.md">Wiki Home (Readme.md)</a>
-<img src="images/LandingPage.png" alt="" /></p>
+<img src="images/LandingPage.png" style="background: transparent; border-style: none;" width=500 /></p>
+<p><a href="https://sa-devolution.visualstudio.com/_git/Wiki?path=%2FREADME.md">Wiki Home (Readme.md)</a></p>
 </li>
 <li>
 <p>offline<br />
@@ -487,7 +504,7 @@ SMM, BM, SysMM, IG, UM</p>
 <h3>FAQ</h3>
 <ul>
 <li>
-EN vs. DE?
+<p>EN vs. DE?</p>
 <ul>
 <li>
 <p>Code: EN, Wiki: EN or DE<br />
@@ -495,17 +512,24 @@ The more technical the more English</p>
 </li>
 </ul>
 </li>
-<li>kann ich was kaputt machen? → Nein</li>
+<li>Can I break something? → No!!!</li>
 </ul>
 </section>
 </section>
 <section >
 <section >
-<h2>Ausblick</h2>
+<h2>Perspective</h2>
 <ul>
-<li>Content, content, content</li>
 <li>
-<p>Workshops</p>
+Content, content, content
+<ul>
+<li>Software Maintenance Manuals</li>
+<li>Build Manuals</li>
+<li>Architectural knowledge, diagrams</li>
+</ul>
+</li>
+<li>
+Workshops
 <ul>
 <li>Git-Basics</li>
 <li>offline editing</li>
@@ -517,17 +541,15 @@ The more technical the more English</p>
 <section >
 <h3>Links</h3>
 <ul>
-<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></li>
-<li><a href="http://www.makeuseof.com/tag/learning-markdown-write-web-faster/">Learning Markdown: Write For the Web, Faster</a></li>
+<li><p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></p></li>
+<li><p><a href="http://www.makeuseof.com/tag/learning-markdown-write-web-faster/">Learning Markdown: Write For the Web, Faster</a></p></li>
+<li><p><a href="https://stepahead.github.io/presentations/#/">Presentation: Wiki der Step Ahead</a></p></li>
+<li><p><a href="https://sa-devolution.visualstudio.com/_git/Wiki?path=%2FREADME.md">technisches Wiki der Step Ahead</a></p></li>
 </ul>
-<ul>
-<li><a href="https://stepahead.github.io/presentations/#/">Presentation: Wiki der Step Ahead</a></li>
-<li><a href="https://sa-devolution.visualstudio.com/_git/Wiki?path=%2FREADME.md">technisches Wiki der Step Ahead</a></li>
-</ul>
+</section>
 </section>
 <section >
 <p><img src="images/ChuckNorris.jpg" alt="" /></p>
-</section>
 </section>
 
 
