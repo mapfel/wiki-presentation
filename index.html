@@ -66,6 +66,7 @@ Product-Management
 <li><a href="#/WhyWeNeedTechnicalWiki">Why we need a technical Wiki?</a></li>
 <li><a href="#/WhyTechniciansLikeGit-basedWikis">Why we use a Git/Markdown-based Wiki?</a></li>
 <li><a href="#/StructureOfOurWiki">Structure of our Wiki</a></li>
+<li><a href="#/contribution">Contribution</a></li>
 </ul>
 </section>
 </section>
@@ -103,10 +104,10 @@ tacit knowledge = knowledge not related to any specific project but essential to
 <p>enterprise Wiki<br />
 contribution level is much higher
 based on the fact that people are contributing
-as part of the daily course of their work
-→ <strong>everybody full control</strong></p>
+as part of the daily course of their work</p>
 </li>
 </ul>
+<p>→ <strong>everybody full control</strong></p>
 </section>
 </section>
 <section >
@@ -123,7 +124,7 @@ as part of the daily course of their work
 </li>
 <li>
 <p>Lightweight Git/Markdown-based Wikis<br />
-(github, BitBucket, VSTS, ..)</p>
+(github, BitBucket, VSTS, docs.microsoft.com, ..)</p>
 </li>
 </ul>
 </section>
@@ -153,8 +154,9 @@ to a given point in time was
 Versioning in a context
 <ul>
 <li>
-Commit wraps all belonging changes,
+Commit wraps
 <ul>
+<li>All belonging changes</li>
 <li>Commit message</li>
 <li>Relocating content together with adjusted references</li>
 </ul>
@@ -308,23 +310,41 @@ Actual numbers don't matter, just that it's a number
 <p>btw: Markdown takes care, regarding numbering<br />
 → use 1. only</p>
 </section>
+<section >
+<h3>References &amp; Links</h3>
+<ul>
+<li>
+<p>URL-Reference<br />
+<code>[text for the link](http-address)</code></p>
+</li>
+<li>
+<p>Link to another page<br />
+<code>[text for the link](&lt;filename with ext&gt;)</code></p>
+</li>
+<li>
+<p>Images<br />
+<code>![alternate text](images/&lt;filename with ext&gt;)</code></p>
+</li>
+</ul>
+<p>tip: skip the alternate text</p>
+</section>
 </section>
 <section >
 <section id="StructureOfOurWiki">
-<h3>Structure of the Wiki</h3>
+<h2>Structure of the Wiki</h2>
 <ul>
-<li>000 - <strong>Generic IT topics</strong></li>
-<li>200 - <strong>Guidelines</strong></li>
-<li>300 - <strong>Documentation</strong></li>
-<li>400 - <strong>Specifications</strong></li>
-<li>500 - Steps specific knowledge</li>
+<li><a href="#/structure-100">000 - <strong>Generic IT topics</strong></a></li>
+<li><a href="#/structure-200">200 - <strong>Guidelines</strong></a></li>
+<li><a href="#/structure-300">300 - <strong>Documentation</strong></a></li>
+<li><a href="#/structure-400">400 - <strong>Specifications</strong></a></li>
+<li><a href="#/structure-500">500 - <strong>Steps specific knowledge</strong></a></li>
 <li>700 - Databases</li>
 <li>800 - Coding</li>
-<li>900 - <strong>Tools</strong></li>
+<li><a href="#/structure-900">900 - <strong>Tools</strong></a></li>
 </ul>
 </section>
-<section >
-<h3>Generic IT topics</h3>
+<section id="structure-100">
+<h3>Generic IT topics (100)</h3>
 <ul>
 <li>
 IT systems of Step Ahead
@@ -344,14 +364,15 @@ External services
 </li>
 </ul>
 </section>
-<section >
-<h3>Guidelines</h3>
+<section id="structure-200">
+<h3>Guidelines (200)</h3>
 <ul>
 <li>201, 210-219 Organisation</li>
 <li>202, 220-229 IT-Fundamentals</li>
 <li>203, 230-239 Standard Tools</li>
 <li>...</li>
 </ul>
+<p><img src="images/Guidelines.png" alt="" /></p>
 </section>
 <section >
 <h3>Organisational Guidelines &amp; Instructions</h3>
@@ -373,9 +394,48 @@ External services
 <img src="images/OG.StepsAgile.01.png" style="background: transparent; border-style: none;"  width=300 />
 <p><img src="images/OG.StepsAgile.01.png" alt="" /></p>
 </section>
+<section id="structure-300">
+<h3>Documentation (300)</h3>
+<ul>
+<li>
+<p>Essential documents for projects<br />
+SMM, BM, SysMM, IG, UM</p>
+</li>
+<li>Tips and tricks for Markdown and Pygments</li>
+<li>Writing good Installation Guidelines</li>
+<li>Templates</li>
+</ul>
 </section>
 <section >
+<h3>SMM - Software Maintenance Manual</h3>
+<p><img src="images/SMM.png" alt="" /></p>
+</section>
+<section id="structure-400">
+<h3>Specification (400)</h3>
+<p><code>400.Specification.Overview.md</code></p>
+<p><img src="images/Specifications.png" alt="" /></p>
+</section>
+<section id="structure-500">
+<h3>Steps specific knowledge (500)</h3>
+<p><code>500.Steps.Overview.md</code></p>
+<p><img src="images/Steps.png" alt="" /></p>
+</section>
+<section id="structure-900">
+<h3>Tools and Applications (900)</h3>
+<p><code>900.Tools.Overview.md</code></p>
+<ul>
+<li>How to setup a new machine</li>
+<li>XCopy-deployable Applications</li>
+<li>Git</li>
+</ul>
+</section>
 <section >
+<h3>Setup new machine</h3>
+<p><img src="images/Tools.png" alt="" /></p>
+</section>
+</section>
+<section >
+<section id="contribution">
 <h2>Contribution</h2>
 <ul>
 <li>
@@ -423,15 +483,51 @@ External services
 <p><img src="images/Contribute.11.png" alt="" /></p>
 <p><img src="images/Contribute.12.png" alt="" /></p>
 </section>
+<section >
+<h3>FAQ</h3>
+<ul>
+<li>
+EN vs. DE?
+<ul>
+<li>
+<p>Code: EN, Wiki: EN or DE<br />
+The more technical the more English</p>
+</li>
+</ul>
+</li>
+<li>kann ich was kaputt machen? → Nein</li>
+</ul>
+</section>
+</section>
+<section >
+<section >
+<h2>Ausblick</h2>
+<ul>
+<li>Content, content, content</li>
+<li>
+<p>Workshops</p>
+<ul>
+<li>Git-Basics</li>
+<li>offline editing</li>
+</ul>
+</li>
+<li>Exporting content</li>
+</ul>
 </section>
 <section >
 <h3>Links</h3>
 <ul>
 <li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></li>
 <li><a href="http://www.makeuseof.com/tag/learning-markdown-write-web-faster/">Learning Markdown: Write For the Web, Faster</a></li>
+</ul>
+<ul>
 <li><a href="https://stepahead.github.io/presentations/#/">Presentation: Wiki der Step Ahead</a></li>
 <li><a href="https://sa-devolution.visualstudio.com/_git/Wiki?path=%2FREADME.md">technisches Wiki der Step Ahead</a></li>
 </ul>
+</section>
+<section >
+<p><img src="images/ChuckNorris.jpg" alt="" /></p>
+</section>
 </section>
 
 
