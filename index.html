@@ -46,7 +46,8 @@
 </head>
 <body>
     <div class="reveal">
-        
+        <div class="tip" id="fs1">type &#39;T list = List&lt;&#39;T&gt;<br /><br />Full name: Microsoft.FSharp.Collections.list&lt;_&gt;</div>
+
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section >
@@ -144,6 +145,7 @@ Flexibilty regarding hoster
 </section>
 </section>
 <section >
+<section >
 <h3>Why we use Markdown</h3>
 <ul>
 <li>It's fast to write</li>
@@ -158,6 +160,117 @@ Markdown can be a useful tool for producing clean &amp; professional looking
 </li>
 <li>without the hassle of remembering lots of HTML tags</li>
 </ul>
+</section>
+<section >
+<h3>Headers</h3>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+<span class="l">7: </span>
+<span class="l">8: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">`</span><span class="k">`</span><span class="k">`</span>
+#<span class="i">H1</span>
+# <span class="i">H2</span>
+## <span class="i">H3</span>
+### <span class="i">H4</span>
+#### <span class="i">H5</span>
+##### <span class="i">H6</span>
+<span class="k">`</span><span class="k">`</span><span class="k">`</span>
+</code></pre></td>
+</tr>
+</table>
+<h1>H1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+<h6>H6</h6>
+</section>
+<section >
+<p>Alternatively, for H1 and H2, an underline-ish style:</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+<span class="l">7: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">`</span><span class="k">`</span><span class="k">`</span>
+<span class="i">Alt</span><span class="o">-</span><span class="i">H1</span>
+<span class="o">======</span>
+
+<span class="i">Alt</span><span class="o">-</span><span class="i">H2</span>
+<span class="o">------</span>
+<span class="k">`</span><span class="k">`</span><span class="k">`</span>
+</code></pre></td>
+</tr>
+</table>
+<h1>Alt-H1</h1>
+<h2>Alt-H2</h2>
+</section>
+<section >
+<h3>Emphasis</h3>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">`</span><span class="k">`</span><span class="k">`</span>
+<span class="i">Emphasis</span>, <span class="i">aka</span> <span class="i">italics</span>, <span class="k">with</span> <span class="o">*</span><span class="i">asterisks</span><span class="o">*</span> <span class="k">or</span> <span class="i">_underscores_</span><span class="o">.</span>
+<span class="i">Strong</span> <span class="i">emphasis</span>, <span class="i">aka</span> <span class="i">bold</span>, <span class="k">with</span> <span class="o">**</span><span class="i">asterisks</span><span class="o">**</span> <span class="k">or</span> <span class="i">__underscores__</span><span class="o">.</span>
+<span class="k">`</span><span class="k">`</span><span class="k">`</span>
+</code></pre></td>
+</tr>
+</table>
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.<br />
+Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+</section>
+<section >
+<h3>Lists</h3>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+<span class="l">7: </span>
+<span class="l">8: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">`</span><span class="k">`</span><span class="k">`</span>
+<span class="n">1.</span> <span class="i">First</span> <span class="i">ordered</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="i">list</span> <span class="i">item</span>
+<span class="n">2.</span> <span class="i">Another</span> <span class="i">item</span>
+	<span class="o">*</span> <span class="i">Unordered</span> <span class="i">sub</span><span class="o">-</span><span onmouseout="hideTip(event, 'fs1', 2)" onmouseover="showTip(event, 'fs1', 2)" class="i">list</span><span class="o">.</span> 
+<span class="n">1.</span> <span class="i">Actual</span> <span class="i">numbers</span> <span class="i">don&#39;t</span> <span class="i">matter</span>, <span class="i">just</span> <span class="i">that</span> <span class="i">it&#39;s</span> <span class="i">a</span> <span class="i">number</span>
+	<span class="n">1.</span> <span class="i">Ordered</span> <span class="i">sub</span><span class="o">-</span><span onmouseout="hideTip(event, 'fs1', 3)" onmouseover="showTip(event, 'fs1', 3)" class="i">list</span>
+<span class="n">3.</span> <span class="i">And</span> <span class="i">another</span> <span class="i">item</span><span class="o">.</span>
+<span class="k">`</span><span class="k">`</span><span class="k">`</span>
+</code></pre></td>
+</tr>
+</table>
+<ol>
+<li>First ordered list item</li>
+<li>
+Another item
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+</li>
+<li>
+Actual numbers don't matter, just that it's a number
+<ol>
+<li>Ordered sub-list</li>
+</ol>
+</li>
+<li>And another item.</li>
+</ol>
+<p>btw: Markdown takes care, regarding numbering<br />
+--&gt; use 1. only</p>
+</section>
 </section>
 <section >
 <section >
@@ -193,6 +306,35 @@ External services
 </ul>
 </li>
 </ul>
+</section>
+</section>
+<section >
+<section >
+<h3>Guidelines</h3>
+<ul>
+<li>201, 210-219 Organisation</li>
+<li>202, 220-229 IT-Fundamentals</li>
+<li>203, 230-239 Standard Tools</li>
+<li>...</li>
+</ul>
+</section>
+<section >
+<h3>Organisational Guidelines &amp; Instructions</h3>
+<p><code>201.OrganisationalGuidelines.md</code></p>
+<ul>
+<li>HR-related Guidlines</li>
+<li>
+<strong>Activity Management, Tracking &amp; Controlling</strong>
+<ul>
+<li>Steps Agile</li>
+<li>Committing Code</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<h3>Activity Management, Tracking &amp; Controlling</h3>
+<p><code>211.OG.StepsAgile.md</code></p>
 </section>
 </section>
 
