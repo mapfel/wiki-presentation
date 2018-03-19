@@ -111,7 +111,7 @@ to a given point in time was
 * Export-Options
 	* Pandoc
 	* External documents (UM, IG, ..)
-* Flexibilty regarding hoster
+* Flexibility regarding hoster
 	* No vendor lockin
 * It' s fun, it's modern
 
@@ -234,14 +234,15 @@ incl. Syntax-Highlighting
 
 ## Structure of the Wiki
 
-* [000 - **Generic IT topics**](#/structure-000)
-* [200 - **Guidelines**](#/structure-200)
-* [300 - **Documentation**](#/structure-300)
-* [400 - **Specifications**](#/structure-400)
-* [500 - **Steps specific knowledge**](#/structure-500)
-* 700 - Databases 
-* 800 - Coding
-* [900 - **Tools**](#/structure-900)
+* [**Generic IT topics**](#/structure-000)
+* [**Guidelines**](#/structure-200)
+* [**Documentation**](#/structure-300)
+* [**Specifications**](#/structure-400)
+* [**Steps specific knowledge**](#/structure-500)
+* Databases 
+* Coding
+* [**Tools**](#/structure-900)
+* WFX
 
 ---
 - id : structure-000
@@ -260,22 +261,23 @@ incl. Syntax-Highlighting
 ---
 - id : structure-200
 
-### Guidelines (200)
+### Guidelines
 
-* 201, 210-219 Organisation
-* 202, 220-229 IT-Fundamentals
-* 203, 230-239 Standard Tools
+* Organization
+* IT-Fundamentals
+* Coding
+* Standard Tools
 * ...
 
 ![](images/Guidelines.png)
 
 ---
 
-### Organisational Guidelines & Instructions
+### Organizational Guidelines & Instructions
 
-`201.OrganisationalGuidelines.md`
+`.../Guidelines/Organization.md`
 
-* HR-related Guidlines
+* HR-related Guidelines
 * **Activity Management, Tracking & Controlling**
 	* Steps Agile
 	* Committing Code
@@ -284,14 +286,14 @@ incl. Syntax-Highlighting
 
 ### Activity Management, Tracking & Controlling
 
-`211.OG.StepsAgile.md`
+`.../Guidelines/Organization/StepsAgile.md"`
 
 ![](images/OG.StepsAgile.01.png)
 
 ---
 - id : structure-300
 
-### Documentation (300)
+### Documentation
 
 * Essential documents for projects  
 SMM, BM, SysMM, IG, UM
@@ -311,27 +313,27 @@ SMM, BM, SysMM, IG, UM
 ---
 - id : structure-400
 
-### Specification (400)
+### Specification
 
-`400.Specification.Overview.md`
+`.../Specifications.md`
 
 ![](images/Specifications.png)
 
 ---
 - id : structure-500
 
-### Steps specific knowledge (500)
+### Steps specific knowledge
 
-`500.Steps.Overview.md`
+`.../Manuals.md`
 
 ![](images/Steps.png)
 
 ---
 - id : structure-900
 
-### Tools and Applications (900)
+### Tools and Applications
 
-`900.Tools.Overview.md`
+`.../Tools.md`
 
 * How to setup a new machine
 * XCopy-deployable Applications
@@ -352,10 +354,10 @@ SMM, BM, SysMM, IG, UM
 * online  
 <img src="images/LandingPage.png" style="background: transparent; border-style: none;" width=500 />
 
-	[Wiki Home (Readme.md)](https://sa-devolution.visualstudio.com/_git/Wiki?path=%2FREADME.md)  
+	[Wiki Home (Readme.md)](https://stepahead.visualstudio.com/Wiki/_wiki)  
 
 * offline  
-`git clone https://sa-devolution.visualstudio.com/_git/Wiki/`
+`git clone https://stepahead.visualstudio.com/Wiki/_wiki`
 
 ---
 
@@ -382,14 +384,14 @@ use `...` for trivial changes
 
 </br>
 
-[Guideline: Commit](https://sa-devolution.visualstudio.com/_git/Wiki?path=%2F212.OG.CommitCode.md)
+[Guideline: Commit](https://stepahead.visualstudio.com/Wiki/_wiki/wikis/Wiki.wiki?pagePath=%2FGuidelines%2FOrganization%2FCommitCode)
 
 <small>Committing Code and other artifacts to a VCS</small>
 
 </br>
 </br>
 
-[BestPractices: Commits](https://sa-devolution.visualstudio.com/_git/Wiki?path=%2F911.Git.BestPractices.Commits.md)
+[BestPractices: Commits](https://stepahead.visualstudio.com/Wiki/_wiki/wikis/Wiki.wiki?pagePath=%2FTools%2FGit%2FBestPractices.Commits)
 
 ---
 
@@ -447,7 +449,7 @@ The more technical the more English
 
 * [Presentation: Wiki der Step Ahead](https://stepahead.github.io/presentations/#/)
 
-* [technisches Wiki der Step Ahead](https://sa-devolution.visualstudio.com/_git/Wiki?path=%2FREADME.md)
+* [technisches Wiki der Step Ahead](https://stepahead.visualstudio.com/Wiki/_wiki)
 
 ***
 
