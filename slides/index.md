@@ -286,7 +286,7 @@ incl. Syntax-Highlighting
 
 ### Activity Management, Tracking & Controlling
 
-`.../Guidelines/Organization/StepsAgile.md"`
+`.../Guidelines/Organization/StepsAgile.md`
 
 ![](images/OG.StepsAgile.01.png)
 
