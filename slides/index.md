@@ -1,5 +1,5 @@
-- title : Wiki der Step Ahead
-- description : Überblick zum technischen Wiki der Step Ahead
+- title : Wiki for teams and companies
+- description : Overview about an Azure DevOps based Wiki
 - author : Marko Apfel
 - theme : night
 - transition : default
@@ -7,18 +7,18 @@
 ***
 
 
-## Technical Wiki der Step Ahead
+## Technical Wiki
 
 <br />
 <br />
 
 ### Introduction
 
-[bit.ly/sag-wiki](http://bit.ly/sag-wiki)
+[bit.ly/sag-wiki](http://bit.ly/mapfel-wiki)
 
 <br />
 <br />
-Product-Management, PoC: MA
+PoC: MA
 
 ---
 
@@ -240,7 +240,7 @@ incl. Syntax-Highlighting
 * [**Guidelines**](#/structure-200)
 * [**Documentation**](#/structure-300)
 * [**Specifications**](#/structure-400)
-* [**Steps specific knowledge**](#/structure-500)
+* [**Some specific knowledge**](#/structure-500)
 * Databases 
 * Coding
 * [**Tools**](#/structure-900)
@@ -251,14 +251,12 @@ incl. Syntax-Highlighting
 
 ### Generic IT topics (000)
 
-* IT systems of Step Ahead
-	* Steps
+* Internal IT systems
 	* Team Foundation Server
-	* CORP.IT-Infos für neue Mitarbeiter in CORP.Produkt
-	* Testsysteme der Produktentwicklung
+	* Test systems for quality assurance
 * External services
 	* Office 365
-	* Visual Studio Team Services
+	* Azure DevOps
 
 ---
 - id : structure-200
@@ -271,8 +269,6 @@ incl. Syntax-Highlighting
 * Standard Tools
 * ...
 
-![](images/Guidelines.png)
-
 ---
 
 ### Organizational Guidelines & Instructions
@@ -280,17 +276,9 @@ incl. Syntax-Highlighting
 `.../Guidelines/Organization.md`
 
 * HR-related Guidelines
-* **Activity Management, Tracking & Controlling**
-	* Steps Agile
+* Activity Management, Tracking & Controlling
+	* Tailored agile process
 	* Committing Code
-
---- 
-
-### Activity Management, Tracking & Controlling
-
-`.../Guidelines/Organization/StepsAgile.md`
-
-![](images/OG.StepsAgile.01.png)
 
 ---
 - id : structure-300
@@ -298,17 +286,17 @@ incl. Syntax-Highlighting
 ### Documentation
 
 * Essential documents for projects  
-SMM, BM, SysMM, IG, UM
-
+  SMM, BM, SysMM, IG, UM
 * Tips and tricks for Markdown and Pygments
-
 * Writing good Installation Guidelines
-
 * Templates
 
 ---
 
 ### SMM - Software Maintenance Manual
+
+- ensure proper management of infrastructure, software, components & configurations
+- description of artifacts and their structure or location
 
 ![](images/SMM.png)
 
@@ -318,17 +306,6 @@ SMM, BM, SysMM, IG, UM
 ### Specification
 
 `.../Specifications.md`
-
-![](images/Specifications.png)
-
----
-- id : structure-500
-
-### Steps specific knowledge
-
-`.../Manuals.md`
-
-![](images/Steps.png)
 
 ---
 - id : structure-900
@@ -356,10 +333,10 @@ SMM, BM, SysMM, IG, UM
 * online  
 <img src="images/LandingPage.png" style="background: transparent; border-style: none;" width=500 />
 
-	[Wiki Home (Readme.md)](https://stepahead.visualstudio.com/Wiki/_wiki)  
+	[Wiki Home (Readme.md)](https://<organization>.visualstudio.com/<project>/_wiki)  
 
 * offline  
-`git clone https://stepahead.visualstudio.com/Wiki/_wiki`
+`git clone https://<organization>.visualstudio.com/<project>/_wiki`
 
 ---
 
@@ -386,14 +363,14 @@ use `...` for trivial changes
 
 </br>
 
-[Guideline: Commit](https://stepahead.visualstudio.com/Wiki/_wiki/wikis/Wiki.wiki?pagePath=%2FGuidelines%2FOrganization%2FCommitCode)
+[Guideline: Commit](https://todo)
 
 <small>Committing Code and other artifacts to a VCS</small>
 
 </br>
 </br>
 
-[BestPractices: Commits](https://stepahead.visualstudio.com/Wiki/_wiki/wikis/Wiki.wiki?pagePath=%2FTools%2FGit%2FBestPractices.Commits)
+[BestPractices: Commits](https://todo)
 
 ---
 
@@ -449,9 +426,9 @@ The more technical the more English
 
 * [Learning Markdown: Write For the Web, Faster](http://www.makeuseof.com/tag/learning-markdown-write-web-faster/)
 
-* [Presentation: Wiki der Step Ahead](https://stepahead.github.io/presentations/#/)
+* [Presentation: Wiki for projects, Teams and Compananies](https://mapfel.github.io/wiki-presentations)
 
-* [technisches Wiki der Step Ahead](https://stepahead.visualstudio.com/Wiki/_wiki)
+* [technisches Wiki of Marko (ToDo)](https://mapfel.azure.com/ToDo/_wiki)
 
 ***
 
