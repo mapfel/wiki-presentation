@@ -14,7 +14,7 @@
 
 ### Introduction
 
-[bit.ly/sag-wiki](http://bit.ly/mapfel-wiki)
+[bit.ly/mapfel-wiki](http://bit.ly/mapfel-wiki)
 
 <br />
 <br />
