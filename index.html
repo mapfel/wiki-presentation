@@ -403,6 +403,20 @@ Actual numbers don't matter, just that it's a number
 <span class="l">2: </span>
 <span class="l">3: </span>
 <span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip"><code lang="text">    ```fsharp
+    let update (msg:Msg) (model:Model) =
+        match msg with
+        | Increment -&gt; model + 1
+        | Decrement -&gt; model - 1
+    ```
+</code></pre></td></tr></table>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
 </pre></td>
 <td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span class="i">update</span> (<span class="i">msg</span><span class="o">:</span><span class="i">Msg</span>) (<span class="i">model</span><span class="o">:</span><span class="i">Model</span>) <span class="o">=</span>
     <span class="k">match</span> <span class="i">msg</span> <span class="k">with</span>
@@ -411,7 +425,6 @@ Actual numbers don't matter, just that it's a number
 </code></pre></td>
 </tr>
 </table>
-<p><img src="images/syntax-highlighting.png" alt="" /></p>
 </section>
 </section>
 <section >
